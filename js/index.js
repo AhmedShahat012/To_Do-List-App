@@ -36,7 +36,8 @@ var tasksArr = getTasksfromlocalStorage();
 displayAllTasks();
 let updataInex;
 const titleRegex = /^[A-Z][a-z]{3,}$/;
-const describtionRegex = /\w{25,100}/;
+const describtionRegex = /^(.|\s)*[a-zA-Z]+(.|\s)*$/;
+///\w{25,100}/;
 
 // ~ ====================> Functions
 function showmodel() {
